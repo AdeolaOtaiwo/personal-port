@@ -1,0 +1,121 @@
+:root {
+    --primary-color: #b59410;
+    --secondary-color: #666;
+    --accent-color: #007bff;
+    --text-color: #f0f0f0;
+    --about-bg-color: #003366;
+    --art-title-color: #add8e6; /* Light blue for art titles */
+    --cream-color: #f5f5dc; /* Cream color for navigation */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.profile-container {
+    position: relative;
+    display: inline-block;
+    max-width: 150px; /* Adjust based on your preference */
+}
+
+.profile-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.subtitle {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 0.8em;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--cream-color);
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#about, #work, #contact {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+.work-container, .featured-work, .other-works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.featured-work img, .other-works img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+.featured-work img:hover, .other-works img:hover, footer a:hover i {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.featured-work p, .other-works p {
+    color: var(--art-title-color);
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    color: var(--primary-color);
+    background-color: var(--cream-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s ease; /* Smooth color transition for hover */
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--primary-color); /* Highlight color on hover */
+}
+
+footer i {
+    margin-right: 5px; /* Space between icon and text */
+}
